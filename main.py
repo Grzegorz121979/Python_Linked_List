@@ -4,4 +4,4 @@ lList = LinkedList()
 
 lList.insertAtBegin('a')
 
-print(lList)
+lList.printLL()
