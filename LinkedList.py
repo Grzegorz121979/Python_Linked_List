@@ -30,3 +30,14 @@ class LinkedList:
                 current_node.next = new_node
             else:
                 print('Index not present')
+
+    def insertAtEnd(self, data):
+        new_node = Node(data)
+        if self.head is None:
+            self.head = new_node
+
+        current_node = self.head
+        while current_node.next:
+            current_node = current_node.next
+
+        current_node.next = new_node
